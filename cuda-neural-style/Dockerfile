@@ -5,7 +5,7 @@ RUN apt-get install -y wget libpng-dev libprotobuf-dev protobuf-compiler
 RUN git clone --depth 1 https://github.com/jcjohnson/neural-style.git
 RUN /root/torch/install/bin/luarocks install loadcaffe
 
-RUN git clone https://gist.github.com/67939ced008b96e7aa43.git devices
+RUN git clone https://gist.github.com/67939ced008b96e7aa43.git /root/devices
 
 WORKDIR /root/torch/neural-style
 VOLUME /root/torch/neural-style/models
