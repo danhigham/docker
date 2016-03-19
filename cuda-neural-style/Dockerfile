@@ -6,8 +6,6 @@ RUN git clone --depth 1 https://github.com/jcjohnson/neural-style.git
 RUN /root/torch/install/bin/luarocks install loadcaffe
 
 RUN git clone https://gist.github.com/67939ced008b96e7aa43.git devices
-RUN source /root/devices/container_devices
-RUN permit_device_control
 
 WORKDIR /root/torch/neural-style
 VOLUME /root/torch/neural-style/models
